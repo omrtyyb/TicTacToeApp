@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        style="@style/Gravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#D3D3D3"
+        app:layout_constraintEnd_toEndOf="@+id/moveTexts"
+        app:layout_constraintStart_toStartOf="@+id/moveTexts"
+        app:layout_constraintTop_toBottomOf="@+id/moveTexts">
+
+        <TableRow
+            style="@style/Gravity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+        </TableRow>
+
+        <TableRow
+            style="@style/Gravity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+        </TableRow>
+
+
+        <TableRow
+            style="@style/Gravity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/CustomButton"
+                android:onClick="buClick"
+                app:backgroundTint="@color/buttonColor" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/moveTexts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/welcome"/>
+
+    <TextView
+        android:id="@+id/congratsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#9F0505"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/replay" />
+
+    <Button
+        android:id="@+id/replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Replay"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/congratsText"
+        app:layout_constraintStart_toStartOf="@+id/congratsText"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

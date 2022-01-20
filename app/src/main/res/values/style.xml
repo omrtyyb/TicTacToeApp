@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="CustomButton" >
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">@color/purple_200</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="Gravity">
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
